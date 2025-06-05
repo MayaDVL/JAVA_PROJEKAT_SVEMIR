@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 public abstract class NebeskoTelo extends Objekat{
+	
 	private int r;
 
 	public NebeskoTelo(int xx, int yy, Color c, int rr) {
