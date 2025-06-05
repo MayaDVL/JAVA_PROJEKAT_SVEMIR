@@ -33,6 +33,7 @@ public class Generator extends Thread{
 				}
 				
 				svemir.dodajNT(new Kometa((int)(Math.floor(Math.random()*(200))),0,(int)Math.floor(Math.random()*30+10)));
+				
 				sleep(800);
 			}
 		}catch(InterruptedException e) {}
