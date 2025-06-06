@@ -5,7 +5,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
 
-public class Svemir extends Canvas implements Runnable{
+public class Svemir extends Canvas implements Runnable {
 	
 	ArrayList<NebeskoTelo> lista;
 	private Color pozadina = Color.BLACK;
@@ -26,7 +26,7 @@ public class Svemir extends Canvas implements Runnable{
 		radi = true;
 		notify();
 	}
-	
+	 
 	public synchronized void zavrsi() {
 		radi = false;
 	}
@@ -53,7 +53,7 @@ public class Svemir extends Canvas implements Runnable{
 				getGraphics().fillRect(0, 0, 200, 400); 
 				
 				for(int i = 0; i < lista.size(); i++) {
-					lista.get(i).crtaj(getGraphics());
+					lista.get(i).crtaj(getGraphics()); // new
 				}
 				
 				Thread.sleep(sleepTime);
